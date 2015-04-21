@@ -1,0 +1,32 @@
+//primary color
+$color_pri: #ccc;
+//secondary color
+$color_sec: #fff;
+$color_invalid_field: #d9534f;
+#tasks {
+  .header{margin-bottom:20px;}
+  .add-new.btn{margin-top:20px;}
+  .ng-submitted {
+    input, textarea {
+      &.ng-invalid {
+        border-color: $color_invalid_field;
+      }
+    }
+  }
+  span.error {
+    color: $color_invalid_field;
+    padding-top: 10px;
+    font-style: italic;
+    display: block;
+  }
+  h1.panel-title {
+    font-size: 24px;
+  }
+  .pull-right.btn-danger {
+    margin-right: 10px;
+  }
+}
+
+#auth {
+  text-align: center;
+}
